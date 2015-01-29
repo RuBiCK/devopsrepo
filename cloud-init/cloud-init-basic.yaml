@@ -1,0 +1,15 @@
+#cloud-config
+manage-resolv-conf: true
+
+resolv_conf:
+  nameservers: ['8.8.4.4', '8.8.8.8']
+
+package_upgrade: true
+
+system_info:
+   # This will affect which distro class gets used
+   distro: centos
+
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyoCT8oM1wCQQWlHiRvDbh4jx8FZ7uj51PaAHtiJQkx8b/oVOL2w9OjqFsbMUYd19HzoDAPdqDBQKn13RikCYmuuPYcMCQltTkyFXZwu99wB6dHalIFHvU5/8O2hjXytFXWCyzxI+bc+MZjsg6wVJ3yy3HW+WhEzi7phmnf6k9ilHd8GNZ6gjfQQyoI21RNI10IYVF7eU/bLG4bh2tMSTtcXUyae99uQbjZgVwaK+JbCOukwcQ/BhuC6NrOI7RB2/kpU5AvVckMjwIKIkVtfnTCDGZ28+dMJdPLHG5nqCG+WZdD1wvxXiOZwkuLNUq94kdceAVGPBbRgT/HXO8kaYf rubick@mordor
+  
